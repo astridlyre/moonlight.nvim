@@ -26,4 +26,30 @@ M.default = {
 	none = "NONE",
 }
 
+M.monochromatic = {
+	fg = "#ceced4",
+	fg1 = "#fafafa",
+	bg0 = "#0e0e10",
+	bg1 = "#18181b",
+	bg2 = "#222226",
+	bg3 = "#2b2b30",
+	bg4 = "#35353b",
+	gray = "#52525c",
+	gray_alt = "#656571",
+	red = "#ab2b33",
+	yellow = "#e6bd19",
+	green = "#63ee6a",
+	cyan = "#9898a5",
+	blue = "#adadb8",
+	pink = "#b8b8c1",
+	disabled = "#2e313d",
+	light_red = "#e45862",
+	light_yellow = "#f4da71",
+	light_green = "#88f28d",
+	light_cyan = "#d9d9de",
+	light_blue = "#e4e4e7",
+	light_pink = "#efeff1",
+	none = "NONE",
+}
+
 return M

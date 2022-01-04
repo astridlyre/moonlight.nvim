@@ -185,8 +185,8 @@ function M.set_highlight_groups()
 		TSConstant = { fg = c.fg }, -- For constants
 		TSConstBuiltin = { fg = c.pink, style = "italic" }, -- For constants that are built in the language: `nil` in Lua.
 		TSConstMacro = { fg = c.cyan }, -- For constants that are defined by macros: `NULL` in C.
-		TSConstructor = { fg = c.red }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-		TSError = { fg = c.red }, -- For syntax/parser errors.
+		TSConstructor = { fg = c.light_cyan }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+		--TSError = { }, -- For syntax/parser errors.
 		TSException = { fg = c.blue }, -- For exception related keywords.
 		TSField = { fg = c.blue }, -- For fields.
 		TSFloat = { fg = c.pink }, -- For floats.
@@ -208,7 +208,7 @@ function M.set_highlight_groups()
 		TSParameterReference = { fg = c.fg }, -- For references to parameters of a function.
 		TSProperty = { fg = c.blue }, -- Same as `TSField`.
 		TSPunctDelimiter = { fg = c.gray_alt }, -- For delimiters ie: `.`
-		TSPunctBracket = { fg = c.gray_alt }, -- For brackets and parens.
+		TSPunctBracket = { fg = c.gray }, -- For brackets and parens.
 		TSPunctSpecial = { fg = c.pink }, -- For special punctutation that does not fall in the catagories before.
 		TSRepeat = { fg = c.blue, style = cfg.keyword_style }, -- For keywords related to loops.
 		TSString = { fg = c.cyan }, -- For strings.
@@ -218,7 +218,7 @@ function M.set_highlight_groups()
 		TSSymbol = { fg = c.pink }, -- For identifiers referring to symbols or atoms.
 		TSTag = { fg = c.blue }, -- Tags like html tag names.
 		TSTagAttribute = { fg = c.light_blue, style = "italic" }, -- For html tag attributes.
-		TSTagDelimiter = { fg = c.gray_alt }, -- Tag delimiter like `<` `>` `/`
+		TSTagDelimiter = { fg = c.gray }, -- Tag delimiter like `<` `>` `/`
 		TSText = { fg = c.pink }, -- For strings considered text in a markup language.
 		TSStrong = { fg = c.pink, style = "bold" }, -- For text to be represented in bold.
 		TSEmphasis = { fg = c.pink, style = "bold,italic" }, -- For text to be represented with emphasis.
@@ -397,10 +397,10 @@ function M.set_highlight_groups()
 		CmpItemKindUnit = { fg = c.fg },
 		-- mini.nvim
 		MiniStatuslineModeNormal = { fg = c.bg0, bg = c.light_cyan },
-		MiniStatuslineModeInsert = { fg = c.bg0, bg = c.light_blue },
-		MiniStatuslineModeVisual = { fg = c.bg0, bg = c.light_pink },
-		MiniStatuslineModeReplace = { fg = c.bg0, bg = c.light_yellow },
-		MiniStatuslineModeCommand = { fg = c.bg0, bg = c.light_green },
+		MiniStatuslineModeInsert = { fg = c.bg0, bg = c.light_green },
+		MiniStatuslineModeVisual = { fg = c.bg0, bg = c.light_yellow },
+		MiniStatuslineModeReplace = { fg = c.bg0, bg = c.light_blue },
+		MiniStatuslineModeCommand = { fg = c.bg0, bg = c.light_red },
 		MiniStatuslineModeOther = { fg = c.gray, bg = c.bg1 },
 		MiniStatuslineDevInfo = { fg = c.fg, bg = c.bg2 },
 		MiniStatuslineFilename = { fg = c.fg, bg = c.bg1 },
